@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>استعلام نوبت</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: #434343; 
+            font-family: Tahoma, sans-serif;
+        }
+
+        .page {
+            max-width: 420px;
+            margin: 0 auto;
+        }
+
+        .top-section {
+            padding: 30px 20px 40px 20px;
+        }
+
+        .topbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+        }
+
+        .topbar-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+
+        .home-icon {
+            width: 30px;
+            height: 30px;
+            position: relative;
+        }
+
+        .home-icon svg {
+            width: 100%;
+            height: 100%;
+            fill: #fff;
+        }
+
+        .home-icon::after {
+            content: '';
+            position: absolute;
+            bottom: 4px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 7px;
+            height: 7px;
+            background-color: #434343;
+            border-radius: 1px;
+        }
+
+        .container-wrapper {
+            padding: 0 20px 30px 20px;
+            margin-top: -20px;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 18px; 
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .item {
+            border: 1px solid #dcdcdc;
+            border-radius: 10px;
+            padding: 5px 12px;
+            margin-bottom: 12px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .item:last-child {
+            margin-bottom: 0;
+        }
+
+        .serial-item {
+            border: 1.8px solid #333;
+        }
+
+        .label {
+            font-size: 0.78em;
+            font-weight: 700;
+            color: #777;
+            margin-bottom: 2px;
+        }
+
+        .value {
+            font-weight: 800;
+            font-size: 1.05em;
+            color: #111;
+        }
+
+        .serial {
+            color: #2e7d32;
+            font-size: 1.15em;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="page">
+
+    <div class="top-section">
+        <div class="topbar">
+            <div class="topbar-title">استعلام نوبت</div>
+            <a href="https://borderpark.ir" class="home-icon" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24">
+                    <path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <div class="container-wrapper">
+        <div class="container">
+
+            <div class="item serial-item">
+                <span class="label">سریال نوبت</span>
+                <span class="value serial">GN05020132</span>
+            </div>
+
+            <div class="item">
+                <span class="label">نام مرز</span>
+                <span class="value">ریمدان</span>
+            </div>
+
+            <div class="item">
+                <span class="label">نوع صف</span>
+                <span class="value">تانکر صادرات گاز </span>
+            </div>
+
+            <div class="item">
+                <span class="label">شماره پلاک</span>
+                <span class="value">115-95ع46</span>
+            </div>
+
+            <div class="item">
+                <span class="label">نوع نوبت</span>
+                <span class="value">اینترنتی</span>
+            </div>
+
+            <div class="item">
+                <span class="label">زمان دریافت نوبت</span>
+                <span class="value">1405-04-22 10:40</span>
+            </div>
+
+            <div class="item">
+                <span class="label">وضعیت</span>
+                <span class="value">فعال</span>
+            </div>
+
+            <div class="item">
+                <span class="label">زمان فراخوان</span>
+                <span class="value">1405-05-14 14:25</span>
+            </div>
+
+            <div class="item">
+                <span class="label">تیرپارک</span>
+                <span class="value">سنوار - حیات</span>
+            </div>
+
+            <div class="item">
+                <span class="label">شماره سرویس</span>
+                <span class="value">18632</span>
+            </div>
+
+            <div class="item">
+                <span class="label">زمان ورود به تیرپارک</span>
+                <span class="value">1405-05-14 22:04</span>
+            </div>
+
+            <div class="item">
+                <span class="label">زمان خروج از تیرپارک</span>
+                <span class="value">1405-05-14 22:49</span>
+            </div>
+
+            <div class="item">
+                <span class="label">زمان مجاز ورود به گمرک</span>
+                <span class="value">1405-05-16 22:49</span>
+            </div>
+
+            <div class="item">
+                <span class="label">زمان ابطال نوبت</span>
+                <span class="value">1405-05-16 22:50</span>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
